@@ -21,7 +21,6 @@ Além disso, o projeto estará alinhado juntamente as outras materias ministrada
 
 Um sistema de monitoria eficaz deve atender às necessidades de três tipos de usuários: Alunos, Monitores e Professores/Coordenadores. As funcionalidades podem ser divididas da seguinte forma:
 
----
 
 ## 1. Gestão de Usuários e Autenticação
 
@@ -63,6 +62,7 @@ Um sistema de monitoria eficaz deve atender às necessidades de três tipos de u
 - **Feedback e Avaliação:** Alunos podem avaliar o atendimento do monitor ao final de cada sessão.
 - **Dashboards para Professores/Coordenadores:** Visualização de dados como número de atendimentos por disciplina, principais dúvidas, avaliações dos monitores etc. Isso ajuda a identificar dificuldades dos alunos e a eficácia do programa de monitoria.
 
+---
 
 # Comparação Sistema de Monitoria - Sistema de Agendamento (Clínicas/Salas)
 
