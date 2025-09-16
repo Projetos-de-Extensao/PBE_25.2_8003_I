@@ -7,34 +7,80 @@ title: Design Thinking
 
 ### **1. Capa**
 
-- Título do Projeto
-- Nome da Equipe
-- Data
-- Logo da Empresa/Organização (se aplicável)
 
----
+Título do Projeto: Sistema de Monitoria Acadêmica 
 
-### **2. Introdução**
+Nome da Equipe: João Loss, Luis Cesar e Roberto Ramos 
 
-- **Contexto do Projeto**: Breve descrição do problema ou oportunidade.
-- **Objetivo**: O que se espera alcançar com o projeto.
-- **Público-Alvo**: Quem será impactado pela solução.
-- **Escopo**: Limites e abrangência do projeto.
+Data: Agosto/2025 a Novembro/2025 
 
----
+ 
 
-### **3. Fases do Design Thinking**
+### 2. Introdução 
 
-#### **3.1. Empatia**
+Contexto do Projeto: 
+ Atualmente, muitas instituições de ensino realizam atividades de monitoria de forma manual, sem uma plataforma centralizada para organizar horários, agendamentos e relatórios. Isso gera problemas de comunicação entre monitores, professores e alunos, além de dificultar o acompanhamento dos atendimentos. 
 
-- **Pesquisa**: Métodos utilizados para entender o usuário (entrevistas, observação, etc.).
-- **Insights**: Principais descobertas sobre as necessidades, desejos e dores do usuário.
-- **Personas**: Descrição dos perfis de usuários criados com base na pesquisa.
+Objetivo: 
+ Desenvolver um sistema web em Django para gerenciar a monitoria acadêmica, permitindo: 
 
-#### **3.2. Definição**
+Cadastro de disciplinas, monitores e horários de atendimento. 
 
-- **Problema Central**: Definição clara do problema a ser resolvido (ex.: "Como podemos...?").
-- **Pontos de Vista (POV)**: Frases que sintetizam as necessidades do usuário e os insights.
+Agendamento online de monitoria por alunos. 
+
+Relatórios para professores e coordenação. 
+
+Público-Alvo: 
+
+Alunos: que precisam de suporte em disciplinas. 
+
+Monitores: que oferecem atendimentos. 
+
+Professores: que supervisionam e avaliam a monitoria. 
+
+Administradores/Coordenação: que acompanham indicadores gerais. 
+
+Escopo: 
+ O sistema contempla cadastro de usuários, disciplinas, horários, agendamentos e relatórios básicos.  
+
+ 
+
+### 3. Fases do Design Thinking 
+
+#### 3.1. Empatia 
+
+Pesquisa: 
+
+Observação dos métodos atuais (planilhas, grupos de WhatsApp, papel). 
+
+Análise de sistemas semelhantes. 
+
+Insights: 
+
+Alunos têm dificuldade em saber horários de monitoria atualizados. 
+
+Monitores precisam registrar atendimentos de forma simples. 
+
+Professores querem relatórios rápidos para avaliar impacto da monitoria. 
+
+A comunicação hoje é descentralizada (WhatsApp, e-mail, etc). 
+
+Personas: 
+
+ 
+
+#### 3.2. Definição 
+
+Problema Central: 
+ “Como podemos facilitar o agendamento, registro e acompanhamento das monitorias acadêmicas, de forma prática e acessível para alunos, monitores e professores? Além de obter resultados corretos sobre ela.” 
+
+Pontos de Vista (POV): 
+
+Pessoa 1: Precisa de um sistema onde visualize facilmente horários e possa agendar monitorias sem burocracia. 
+
+Pessoa 2: Precisa de uma forma de registrar atendimentos e presenças sem perder tempo. 
+
+Pessoa 3: Precisa de relatórios confiáveis para avaliar a efetividade da monitoria. 
 
 #### **3.3. Ideação**
 
