@@ -11,7 +11,7 @@ A construção do protótipo de alta fidelidade auxilia a equipe de desenvolvime
 ## Metodologia
 
 <p align = "justify">
-Iniciamos o projeto através dos levantamentos iniciais da equipe, após discussões a ferramenta Figma foi selecionada para produzir o protótipo de alta fidelidade com auxílio do Material Design Color Tool.
+Iniciamos o projeto através dos levantamentos iniciais da equipe, após discussões a ferramenta utilizada foi Python + Matplotlib, ou seja, foi gerado programaticamente.
 </p>
 
 ## Protótipo Baixa Fidelidade.
