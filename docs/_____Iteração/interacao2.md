@@ -18,6 +18,8 @@ title: Iteração 2
 | [Mapas Mentais](https://github.com/xxx/xxx.md)                                                  | XXX e XXXXX      |
 | [Brainstorming](https://github.com/UnBArqDsw/2020.1_G7_TCM/blob/master/docs/base/Brainstorm.md) | Todos            |
 | [Prototipação.](https://github.com/xxx/xxx.md)                                                | XXX e XXXXX      |
+| Elaborar Design Thinking                                                | Roberto      |
+
 
 ## Sprint Retrospective/Review Meeting
 
