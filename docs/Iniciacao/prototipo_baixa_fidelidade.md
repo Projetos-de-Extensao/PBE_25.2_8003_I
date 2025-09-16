@@ -14,6 +14,11 @@ A construção do protótipo de alta fidelidade auxilia a equipe de desenvolvime
 Iniciamos o projeto através dos levantamentos iniciais da equipe, após discussões a ferramenta Figma foi selecionada para produzir o protótipo de alta fidelidade com auxílio do Material Design Color Tool.
 </p>
 
+## Protótipo Baixa Fidelidade.
+ 
+## Versão 1.0
+ 
+[![PrototipoBaixaFidelidade](../assets/Prototipo/prototipobaixafidelidade_monitoria.png)](../assets/Prototipo/prototipobaixafidelidade_monitoria.png)
 
 
 ## Autor(es)
