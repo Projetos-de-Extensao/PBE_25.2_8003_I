@@ -15,6 +15,7 @@ title: Iteração 1
 | Pesquisa                                                                    | Roberto           |
 | Configuração de ambiente de desenvolvimento                                          | Todos         |
 | Criar issues no GitHub                                                               | Todos            |
+| Criar Project                                                               | Todos            |
 
 ## Sprint Retrospective/Review Meeting
 
@@ -37,11 +38,11 @@ title: Iteração 1
 
 ### O que podemos melhorar?
 
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
+- Não deixar para fazer na semana da entrega.
 - A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: https://timebox.cedrotech.com/
+- O grupo precisa trabalhar mais conectado.
 
 ### Ferramentas utilizadas
 
-- Reunião: [Hangouts](https://hangouts.google.com/)
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: Discord.
+

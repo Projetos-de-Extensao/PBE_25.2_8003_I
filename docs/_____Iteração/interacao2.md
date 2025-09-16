@@ -12,16 +12,11 @@ title: Iteração 2
 
 | Tarefa                                                                                       | Responsabilidade |
 | -------------------------------------------------------------------------------------------- | ---------------- |
-| Decidir o nome o projeto.                                                                    | Todos            |
-| Criar o repositório nos padrões (Organizar wiki).                                          | Matheus          |
-| Criar issues no GitHub / ZenHub                                                              | Renan            |
-| Configuração do grupo do Telegram(configurar bot).                                         | Moacir           |
 | Estudar e escolher as metodologias.                                                          | Todos            |
 | [Documento de visão](https://github.com/xxx/xxx.md)                                            | XXX e XXXXX      |
 | Elaborar[5w2H](https://github.com/xxx/xxx.md)                                                   | XXX e XXXXX      |
 | [Mapas Mentais](https://github.com/xxx/xxx.md)                                                  | XXX e XXXXX      |
 | [Brainstorming](https://github.com/UnBArqDsw/2020.1_G7_TCM/blob/master/docs/base/Brainstorm.md) | Todos            |
-| [Entrevistas](https://github.com/xxx/xxx.md)                                                    | XXX e XXXXX      |
 | [Prototipação.](https://github.com/xxx/xxx.md)                                                | XXX e XXXXX      |
 
 ## Sprint Retrospective/Review Meeting
@@ -44,11 +39,10 @@ title: Iteração 2
 
 ### O que podemos melhorar?
 
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
-- A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: https://timebox.cedrotech.com/
+- Elaborar de forma mais clara os topicos pedidos.
+- Melhorar a comunicação, com o objetivo de não atropelar a tarefa do próximo.
 
 ### Ferramentas utilizadas
 
-- Reunião: [Hangouts](https://hangouts.google.com/)
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: Discord
+
