@@ -22,11 +22,11 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, come�
 ### 1. Qual o objetivo principal da aplicação?
  
 <p align = "justify">
-<b>XXXX</b> - Para o Aluno: O objetivo é oferecer um canal centralizado e confiável para encontrar ajuda acadêmica hiper-especializada. Em vez de depender de indicações ou grupos de WhatsApp, o aluno pode buscar, comparar e agendar aulas com alguém que "fala a sua língua", ou seja, que entende as especificidades das matérias, dos professores e das provas do Ibmec.
+ O objetivo é oferecer um canal centralizado e confiável para encontrar ajuda acadêmica hiper-especializada. Em vez de depender de indicações ou grupos de WhatsApp, o aluno pode buscar, comparar e agendar aulas com alguém que "fala a sua língua", ou seja, que entende as especificidades das matérias, dos professores e das provas do Ibmec.
 
 </p>
  
-<b>ZZZ</b> - Para o Monitor: O objetivo é fornecer uma plataforma para que bons alunos possam monetizar seu conhecimento, encontrar clientes de forma estruturada, gerenciar sua agenda e construir uma reputação baseada em avaliações, criando uma fonte de renda qualificada e flexível.
+ O objetivo é fornecer uma plataforma para que bons alunos possam monetizar seu conhecimento, encontrar clientes de forma estruturada, gerenciar sua agenda e construir uma reputação baseada em avaliações, criando uma fonte de renda qualificada e flexível.
  
 
  
@@ -35,8 +35,11 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, come�
 ### 2. Como será o processo para cadastrar um novo cliente?
  
 <p align = "justify">
-<b>XXXX</b> - Processo de Cadastro do Cliente (Aluno)
-Passo 1: Acesso e Criação da Conta
+
+**Processo de Cadastro do Cliente (Aluno)** 
+
+- Passo 1: Acesso e Criação da Conta
+
 Página Inicial: O usuário acessa o site e clica em um botão de destaque, como "Cadastre-se" ou "Criar Conta".
 
 Formulário Inicial: Ele será direcionado para um formulário simples que solicitará apenas as informações essenciais para a criação da conta:
@@ -49,14 +52,16 @@ Criação de Senha e Confirmação da Senha.
 
 Checkbox para aceitar os Termos de Serviço e a Política de Privacidade.
 
-Passo 2: Verificação de E-mail (Etapa de Segurança)
+- Passo 2: Verificação de E-mail (Etapa de Segurança)
+
+
 Confirmação: Após submeter o formulário, o sistema automaticamente enviará um e-mail de verificação para o endereço @ibmec.aluno.br informado.
 
 Ação do Usuário: O cliente precisará abrir seu e-mail e clicar em um link de confirmação. A conta só se tornará ativa após essa etapa.
 
 Feedback na Tela: A página do site informará: "Cadastro quase concluído! Enviamos um link de confirmação para o seu e-mail do Ibmec. Por favor, verifique sua caixa de entrada e spam."
 
-Passo 3: Primeiro Login e Personalização do Perfil (Opcional)
+- Passo 3: Primeiro Login e Personalização do Perfil (Opcional)
 Login: Uma vez verificado, o cliente pode fazer o login com seu e-mail e a senha criada.
 
 Boas-vindas e Perfil: No primeiro acesso, uma tela de boas-vindas pode sugerir que ele complete seu perfil para uma melhor experiência. As informações adicionais seriam:
@@ -69,7 +74,7 @@ Período/Semestre Atual.
 
 Pular Etapa: O cliente terá a opção de "Pular por enquanto" e ir direto para a funcionalidade principal do site, podendo completar essas informações mais tarde em seu perfil.
 
-Passo 4: Pronto parar usar
+- Passo 4: Pronto parar usar
 Imediatamente após o login (e a etapa opcional de perfil), o cliente é direcionado para o painel principal, onde a funcionalidade de busca por matérias e monitores estará em destaque. Um pequeno tour ou dicas na tela podem guiá-lo em suas primeiras ações.
  
 ---
@@ -88,7 +93,8 @@ Aprovação: Uma vez aprovado, o monitor recebe uma notificação por e-mail, e 
 ### 4. Quais informações seriam interessante para o cliente?
 
 <p align = "justify">
-   <b>XXX</b> - Informações de Credibilidade e Confiança
+
+ Informações de Credibilidade e Confiança
 Foto de Perfil Nítida e Amigável: A primeira conexão é visual. Uma boa foto humaniza o monitor e gera confiança inicial.
 
 Nome Completo, Curso e Período: Saber quem é a pessoa e em que estágio da faculdade ela está cria uma conexão imediata ("Ele é de Engenharia do 6º período, deve entender bem de Cálculo").
