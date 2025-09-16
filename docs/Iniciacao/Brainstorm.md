@@ -73,43 +73,8 @@ Passo 4: Pronto parar usar
 Imediatamente após o login (e a etapa opcional de perfil), o cliente é direcionado para o painel principal, onde a funcionalidade de busca por matérias e monitores estará em destaque. Um pequeno tour ou dicas na tela podem guiá-lo em suas primeiras ações.
  
 ---
- 
-### 3. Como será a forma de adicionar produtos?
- 
-<p align = "justify">
-<b>XXXX</b> - Processo para se Tornar Monitor e Adicionar Serviços (Produtos)
-Passo 1: Cadastro Básico e Intenção
-Criação da Conta: O processo começa da mesma forma que o de um cliente, com a criação de uma conta usando o e-mail institucional @ibmec.aluno.br e a verificação por e-mail.
 
-Seleção de Perfil: Durante o cadastro ou no primeiro login, o sistema perguntará qual o seu objetivo principal: "Quero aprender" ou "Quero ensinar". Ao selecionar "Quero ensinar", ele será direcionado para o fluxo de cadastro de monitor.
-
-Passo 2: Formulário de Aplicação para Monitor
-Esta é a etapa mais importante para garantir a qualidade. O candidato a monitor preencherá um formulário detalhado, que servirá como sua "aplicação":
-
-Informações Acadêmicas:
-
-Curso e Período/Semestre atual.
-
-CRA (Coeficiente de Rendimento Acumulado): Pode ser um campo opcional, mas fortemente encorajado, pois serve como um indicador de bom desempenho.
-
-Seleção de Matérias (Produtos):
-
-O candidato escolherá em uma lista pré-definida de matérias do Ibmec quais ele se sente apto a lecionar. Isso evita inconsistências e padroniza a busca (ex: "Cálculo I" em vez de "cálculo 1").
-
-Qualificações e Experiência:
-
-Um campo de texto para ele escrever uma mini-biografia, explicando por que é qualificado para ensinar aquelas matérias (ex: "Fui monitor oficial da matéria no semestre passado", "Tive nota A e ajudo meus amigos com frequência", etc.).
-
-
-Foto de Perfil: Envio de uma foto nítida e amigável.
-
-Descrição do Serviço: Um texto mais elaborado sobre sua metodologia de ensino, o que os alunos podem esperar de suas aulas, etc.
-
-Definição do Preço: Campo para inserir o valor que cobrará por hora de aula.
-
-Configuração de Disponibilidade: Uma ferramenta de calendário onde o monitor marcará seus dias e horários livres para receber agendamentos.
-
-Passo 4: Análise e Aprovação pela Administração
+Análise e Aprovação pela Administração
 Status "Pendente": Depois de preencher tudo, o perfil do monitor não fica público imediatamente. Ele entra em um status de "Pendente de Aprovação".
 
 Revisão: Um administrador da plataforma revisará as informações, verificando a clareza da descrição, a coerência das informações e se o perfil passa uma imagem de confiança e qualidade.
@@ -121,6 +86,7 @@ Aprovação: Uma vez aprovado, o monitor recebe uma notificação por e-mail, e 
 
 
 ### 4. Quais informações seriam interessante para o cliente?
+
 <p align = "justify">
    <b>XXX</b> - Informações de Credibilidade e Confiança
 Foto de Perfil Nítida e Amigável: A primeira conexão é visual. Uma boa foto humaniza o monitor e gera confiança inicial.
