@@ -120,8 +120,7 @@ Aprovação: Uma vez aprovado, o monitor recebe uma notificação por e-mail, e 
  ---
 
 
- 
-### 6. Quais informações seriam interessante para o cliente?
+### 4. Quais informações seriam interessante para o cliente?
 <p align = "justify">
    <b>XXX</b> - Informações de Credibilidade e Confiança
 Foto de Perfil Nítida e Amigável: A primeira conexão é visual. Uma boa foto humaniza o monitor e gera confiança inicial.
