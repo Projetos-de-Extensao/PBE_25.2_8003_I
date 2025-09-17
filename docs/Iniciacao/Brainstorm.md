@@ -13,11 +13,6 @@ O brainstorm é uma técnica de elicitação de requisitos que consiste em reuni
 
 A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, começando em **03/09/2025** e terminando em **17/09/2025**.
 
-## Versão 1.0
-
----
-
-## Perguntas e Respostas
 
 ### 1. Qual o objetivo principal da aplicação?
 
@@ -69,7 +64,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, come�
 
 ---
 
-## Autor(es)
+### Autor(es)
 
 | Data       | Versão | Descrição           | Autor(es)               |
 |------------|--------|---------------------|-------------------------|
