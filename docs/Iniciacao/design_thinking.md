@@ -147,8 +147,8 @@ Pontos de Vista (POV):
 - **Descrição do Protótipo**: O protótipo foi desenvolvido como um wireframe de baixa fidelidade, representando as principais telas do sistema de monitoria acadêmica. Foram criadas as seguintes telas: Login/Cadastro, Dashboard, Tela da Monitoria e Tela de Sessão. O protótipo apresenta campos de texto, botões, menus e cards de funcionalidades, permitindo visualizar a navegação e o fluxo de informações do sistema de forma simplificada, sem se preocupar com cores ou detalhes visuais avançados.
 
 - **Materiais Utilizados**: O protótipo foi elaborado utilizando Python com a biblioteca Matplotlib para gerar uma imagem gráfica das telas. Foram utilizados retângulos, textos e layout em grade para representar os elementos de interface. Opcionalmente, o protótipo pode ser reproduzido em ferramentas digitais como Figma, caso seja necessário tornar o wireframe interativo ou mais visualmente detalhado.
--
- **Testes Realizados**: O protótipo foi revisado pela equipe para validar a organização das telas, fluxo de navegação e posicionamento dos elementos. Foram feitos ajustes na disposição dos menus e cards para garantir clareza visual e melhor entendimento das funcionalidades. O wireframe serviu como referência para futuras iterações e para orientar o desenvolvimento do sistema em Django.
+
+- **Testes Realizados**: O protótipo foi revisado pela equipe para validar a organização das telas, fluxo de navegação e posicionamento dos elementos. Foram feitos ajustes na disposição dos menus e cards para garantir clareza visual e melhor entendimento das funcionalidades. O wireframe serviu como referência para futuras iterações e para orientar o desenvolvimento do sistema em Django.
 
 #### **3.5. Teste**
 
