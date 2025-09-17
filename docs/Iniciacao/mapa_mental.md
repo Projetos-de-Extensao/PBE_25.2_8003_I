@@ -17,13 +17,13 @@ Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa men
  
 ## Mapa mental - Geral.
  
-## Versão 1.0
  
 ### Mapa mental 1
  
 [![Mapa mental Monitoria](../assets/Mapas_Mentais/mapamental_backend.png)](../assets/Mapas_Mentais/mapamental_backend.png)
 
- 
+ ---
+
 ## Conclusão
  
 <p align = "justify">

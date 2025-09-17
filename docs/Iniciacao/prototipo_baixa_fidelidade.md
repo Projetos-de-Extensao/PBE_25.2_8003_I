@@ -16,10 +16,10 @@ Iniciamos o projeto através dos levantamentos iniciais da equipe, após discuss
 
 ## Protótipo Baixa Fidelidade.
  
-## Versão 1.0
  
 [![PrototipoBaixaFidelidade](../assets/Prototipo/prototipobaixafidelidade_monitoria.png)](../assets/Prototipo/prototipobaixafidelidade_monitoria.png)
 
+---
 
 ## Autor(es)
 
