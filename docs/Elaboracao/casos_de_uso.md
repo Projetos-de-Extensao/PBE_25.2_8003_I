@@ -7,81 +7,127 @@ title: Diagrama de Casos de Uso
 
 ### Descrição:
 
-- Contas
-	- Criação
-	- Entrada
-	- Alteração
-	- Recuperar Senha
-	- Exclusão Lógica
-	- Visualização
+#  Diagrama de Casos de Uso – Sistema de Monitoria Acadêmica
 
-- Perfis
-	- Edição
-	- Pesquisar
-	- Visualização
-	- Seguir/Deixar de Seguir
+##  Atores
+- **Aluno**
+  - Consulta monitorias
+  - Reserva horários
+  - Cancela reservas
 
-- Postagens (Público) 	 	
-	- Criação
-	- Exclusão
-	- Interação
-	- Visualização
+- **Monitor**
+  - Cadastra horários
+  - Gerencia monitorias
+  - Acompanha histórico
 
-- Mensagens (Privado)
-	- Criação
-	- Exclusão
-	- Visualização
+- **Administrador**
+  - Gerencia usuários
+  - Gerencia disciplinas
+  - Gera relatórios
 
-- Galerias
-	- Albuns
-- Blogs
-- Grupos
+- **Sistema (Automatizado)**
+  - Realiza autenticação
+  - Envia notificações
+  - Valida dados
 
-### Criação de uma conta no sistema
+---
 
-* Atores:
+##  Casos de Uso por Funcionalidade
 
-	- Usuário
-	- Sistema
+###  Contas
+- Criação de Conta
+- Login
+- Alteração de Conta
+- Recuperação de Senha
+- Exclusão Lógica
+- Visualização de Conta
 
-- Pré-Condições:
-	- Nenhuma
+###  Perfil do Usuário
+- Edição
+- Visualização
 
-* Fluxo Básico:
-    1. Usuário fornece e-mail, senha e confirmações
-    2. Dados do Usuário são validados pelo Sistema
-    3. Dados do Usuário são encriptados pelo Sistema
-    4. Dados do Usuário são persistidos pelo Sistema
-    5. Sistema gera um link com prazo de expiração
-    6. Sistema envia e-mail de verificação, com o link, para o Usuário
-    7. Usuário confirma o e-mail antes do link expirar
-    8. Sistema confirma que o Cadastro do Usuário foi realizado com sucesso
-    9. Sistema redireciona o Usuário para a página de Entrada
+###  Monitorias
+- Consulta de Horários Disponíveis
+- Reserva de Horários
+- Cancelamento de Reserva
+- Histórico de Atendimentos
 
-- Fluxos Alternativos:
-	- 2a. E-mail do Usuário é inválido
-		2a1. Sistema exibe mensagem de erro
-	- 2b. Senha do Usuário não respeita regras de segurança
-		- 2b1. Sistema exibe mensagem de erro
-	- 3a. Usuário tenta confirmar o e-mail depois de o link expirar
-		- 3a1. Sistema sugere que o Usuário realize um novo Cadastro
+###  Disciplinas (Admin)
+- Cadastro
+- Edição
+- Exclusão
+- Consulta (Aluno/Monitor)
 
-### Entrada do usuário no sistema
+###  Notificações
+- Confirmação de Reserva
+- Alterações de Horários
 
-- Atores:
-	- Usuário
-	- Sistema
+###  Relatórios (Admin)
+- Relatório de Reservas por Disciplina
+- Relatório de Atendimentos por Monitor
 
-- Pré-Condições:
-	Usuário deve estar cadastrado
+---
 
-- Fluxo Básico:
-    - 1. Usuário fornece e-mail e senha
-	- 2. Sistema autentica o Usuário
-	- 3. Sistema redireciona o Usuário para a página inicial
+## Fluxos de Interação
 
-- Fluxos Alternativos:
-	- 2a. Dados do Usuário Inválidos
-		- 2a1. Sistema exibe mensagem de erro
-	- 3a. Primeio acesso do Usuário
-		- 3a1. Sistema redireciona o Usuário para a página de edição de perfil
+###  Criação de Conta (Aluno/Monitor/Admin)
+
+**Fluxo Básico:**
+1. Usuário fornece e-mail, senha e confirma os dados.
+2. Sistema valida os dados.
+3. Sistema criptografa a senha e persiste os dados.
+4. Sistema envia e-mail de verificação.
+5. Usuário confirma o e-mail dentro do prazo.
+6. Sistema confirma cadastro e redireciona para login.
+
+**Fluxos Alternativos:**
+- E-mail inválido → exibir erro.
+- Senha não atende às regras → exibir erro.
+- Link de verificação expirado → solicitar novo cadastro.
+
+---
+
+## Login
+
+**Fluxo Básico:**
+1. Usuário fornece e-mail e senha.
+2. Sistema autentica os dados.
+3. Sistema redireciona o usuário para a página inicial de acordo com seu tipo.
+
+**Fluxos Alternativos:**
+- Dados inválidos → exibir mensagem de erro.
+- Primeiro acesso → redirecionar para página de edição de perfil.
+
+---
+
+### Reserva de Monitoria (Aluno)
+
+**Fluxo Básico:**
+1. Aluno seleciona a disciplina e o monitor desejado.
+2. Sistema exibe horários disponíveis.
+3. Aluno escolhe horário e confirma a reserva.
+4. Sistema registra a reserva e envia notificação.
+
+**Fluxos Alternativos:**
+- Horário já reservado → sistema sugere outro horário.
+- Limite de reservas excedido → sistema bloqueia nova reserva.
+
+---
+
+###  Gerenciamento de Horários (Monitor)
+
+**Fluxo Básico:**
+1. Monitor acessa seu painel.
+2. Cadastra horários disponíveis por disciplina.
+3. Sistema valida e persiste os dados.
+4. Sistema exibe relatórios de reservas feitas por alunos.
+
+---
+
+###  Gestão de Disciplinas e Usuários (Admin)
+
+**Fluxo Básico:**
+1. Admin acessa o painel administrativo.
+2. Pode criar, editar ou excluir disciplinas.
+3. Pode cadastrar, editar ou excluir usuários.
+4. Sistema gera relatórios consolidados.
