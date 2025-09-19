@@ -174,13 +174,4 @@ O primeiro caso de uso descreve a ação...
 
 
 
-# Histórico de Versão
 
-| Data       | Versão | Descrição                                                            | Autor(es)                                   |
-| ---------- | ------- | ---------------------------------------------------------------------- | ------------------------------------------- |
-| 08/11/2020 | 1.0     | Criada estrutura básica do documento                                  | xxx xxx, xxx xx, xxx xx, xxx xxx e xxx xxxx |
-| 15/11/2020 | 1.1     | Representação arquitetural e objetivos e restrições arquiteturais. | Autores                                     |
-| 19/11/2020 | 1.2     | Adição dos diagramas, visões, tamanho e desempenho e qualidade      | Autores                                     |
-| 20/11/2020 | 1.3     | Adição da descrição de MER e DER                                   | Autores                                     |
-| 20/11/2020 | 1.4     | Adição do tópico de qualidade                                       | Autores                                     |
-| 20/11/2020 | 1.5     | Revisão                                                               | Autores                                     |
