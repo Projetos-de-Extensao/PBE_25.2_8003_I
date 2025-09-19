@@ -122,6 +122,10 @@ title: Diagrama de Casos de Uso
 3. Sistema valida e persiste os dados.
 4. Sistema exibe relatórios de reservas feitas por alunos.
 
+**Fluxos Alternativos:**
+- Horário inválido → Se o monitor tentar cadastrar um horário fora do intervalo permitido (ex: antes das 08h ou após as 22h), o sistema exibe uma mensagem de erro e bloqueia o cadastro.
+- Sobreposição de horários → Se o horário cadastrado conflitar com outro já registrado (mesmo dia/hora/disciplina), o sistema alerta o monitor e solicita uma correção.
+
 ---
 
 ###  Gestão de Disciplinas e Usuários (Admin)
@@ -131,3 +135,8 @@ title: Diagrama de Casos de Uso
 2. Pode criar, editar ou excluir disciplinas.
 3. Pode cadastrar, editar ou excluir usuários.
 4. Sistema gera relatórios consolidados.
+
+
+**Fluxos Alternativos:**
+- E-mail de usuário duplicado → Se o admin tentar cadastrar um usuário com um e-mail já existente, o sistema não permite e solicita um e-mail diferente.
+- Dados obrigatórios não preenchidos → Ao tentar cadastrar ou editar uma disciplina ou usuário sem preencher campos obrigatórios (ex: nome, e-mail, CPF), o sistema alerta e impede o envio.
