@@ -3,40 +3,6 @@ id: diagrama_de_casos de uso
 title: Diagrama de Casos de Uso
 ---
 
-## Casos de Uso
-
-### Descrição:
-
-- Contas
-	- Criação
-	- Entrada
-	- Alteração
-	- Recuperar Senha
-	- Exclusão Lógica
-	- Visualização
-
-- Perfis
-	- Edição
-	- Pesquisar
-	- Visualização
-	- Seguir/Deixar de Seguir
-
-- Postagens (Público) 	 	
-	- Criação
-	- Exclusão
-	- Interação
-	- Visualização
-
-- Mensagens (Privado)
-	- Criação
-	- Exclusão
-	- Visualização
-
-- Galerias
-	- Albuns
-- Blogs
-- Grupos
-
 ### Criação de uma conta no sistema
 
 * Atores:
