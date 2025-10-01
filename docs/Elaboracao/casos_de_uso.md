@@ -11,24 +11,24 @@ title: Diagrama de Casos de Uso
 
 ##  Atores
 - **Aluno**
-  - Consulta monitorias
-  - Reserva horários
-  - Cancela reservas
+    - Consulta monitorias
+    - Reserva horários
+    - Cancela reservas
 
 - **Monitor**
-  - Cadastra horários
-  - Gerencia monitorias
-  - Acompanha histórico
+    - Cadastra horários
+    - Gerencia monitorias
+    - Acompanha histórico
 
 - **Administrador**
-  - Gerencia usuários
-  - Gerencia disciplinas
-  - Gera relatórios
+    - Gerencia usuários
+    - Gerencia disciplinas
+    - Gera relatórios
 
 - **Sistema (Automatizado)**
-  - Realiza autenticação
-  - Envia notificações
-  - Valida dados
+    - Realiza autenticação
+    - Envia notificações
+    - Valida dados
 
 ---
 
