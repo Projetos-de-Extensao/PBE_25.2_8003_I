@@ -141,8 +141,8 @@ title: Diagrama de Casos de Uso
 - E-mail de usuário duplicado → Se o admin tentar cadastrar um usuário com um e-mail já existente, o sistema não permite e solicita um e-mail diferente.
 - Dados obrigatórios não preenchidos → Ao tentar cadastrar ou editar uma disciplina ou usuário sem preencher campos obrigatórios (ex: nome, e-mail, CPF), o sistema alerta e impede o envio.
 
-```plantuml
-@startuml
+```puml
+@startuml teste
 left to right direction
 
 actor Aluno
