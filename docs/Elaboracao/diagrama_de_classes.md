@@ -161,4 +161,4 @@ title: Diagrama de Casos de Uso
 
 # Mapa mental Monitoria
 
-![Diagramaclasse](../assets/diagrama_classe/diagramaclasse.png)
+![alt text](../assets/diagrama_classe/classe-.png)
