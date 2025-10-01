@@ -141,24 +141,26 @@ title: Diagrama de Casos de Uso
 - E-mail de usuário duplicado → Se o admin tentar cadastrar um usuário com um e-mail já existente, o sistema não permite e solicita um e-mail diferente.
 - Dados obrigatórios não preenchidos → Ao tentar cadastrar ou editar uma disciplina ou usuário sem preencher campos obrigatórios (ex: nome, e-mail, CPF), o sistema alerta e impede o envio.
 
-```mermaid
-usecaseDiagram
-  actor Aluno
-  actor Monitor
-  actor Administrador
-  actor Sistema
+@startuml
+left to right direction
 
-  Aluno --> (Reserva de Horário)
-  Aluno --> (Consulta de Horários)
-  Aluno --> (Histórico de Atendimentos)
-  Aluno --> (Cancelamento de Reserva)
+actor Aluno
+actor Monitor
+actor Administrador
+actor Sistema
 
-  Monitor --> (Cadastro de Horários)
-  Monitor --> (Histórico de Atendimentos)
-  Monitor --> (Cancelamento de Reserva)
+Aluno --> (Reserva de Horário)
+Aluno --> (Consulta de Horários)
+Aluno --> (Histórico de Atendimentos)
+Aluno --> (Cancelamento de Reserva)
 
-  Administrador --> (Relatórios)
-  Administrador --> (Gerenciamento de Usuários)
-  Administrador --> (Gerenciamento de Disciplinas)
+Monitor --> (Cadastro de Horários)
+Monitor --> (Histórico de Atendimentos)
+Monitor --> (Cancelamento de Reserva)
 
-  Sistema --> (Autenticação)
+Administrador --> (Relatórios)
+Administrador --> (Gerenciamento de Usuários)
+Administrador --> (Gerenciamento de Disciplinas)
+
+Sistema --> (Autenticação)
+@enduml
