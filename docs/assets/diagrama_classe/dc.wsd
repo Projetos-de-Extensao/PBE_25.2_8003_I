@@ -5,69 +5,41 @@ skinparam NodeFontSize 14
 
 ' Classe abstrata base para os usuários do sistema
 abstract class Usuario {
-  - id: 
-  - nome: 
-  - email: 
-  - senhaHash: 
-  + autenticar(email, senha): 
-  + editarPerfil()
+  
 }
 
 ' Subclasses específicas de usuários
 class Aluno {
-  + solicitarAgendamento(dataHora, monitor): Agendamento
-  + visualizarMonitorias(filtros): List<Disciplina>
-  + enviarMensagem(destinatario, conteudo): Mensagem
+
 }
 
 class Monitor {
-  + aceitarAgendamento(agendamento: Agendamento)
-  + registrarPresenca(aluno: Aluno, agendamento: Agendamento)
-  + responderMensagem(mensagem: Mensagem)
+
 }
 
 class Professor {
-  + cadastrarDisciplina(nome, codigo, descricao): Disciplina
-  + atribuirMonitor(disciplina: Disciplina, monitor: Monitor)
-  + gerarRelatorio(disciplina: Disciplina): Relatorio
+ 
 }
 
 ' Classes principais do domínio
 class Disciplina {
-  - id: 
-  - nome: 
-  - codigo: 
-  - descricao: 
-  + listarMonitores(): List<Monitor>
-  + obterAgendamentos(): List<Agendamento>
+
 }
 
 class Agendamento {
-  - id: 
-  - dataHora: DateTime
-  - status: 
-  + confirmar()
-  + cancelar()
+
 }
 
 class Presenca {
-  - id: 
-  - presente: 
-  + registrar(presente: Boolean)
+
 }
 
 class Mensagem {
-  - id: 
-  - conteudo: 
-  - dataHora: DateTime
-  + enviar()
-  + responder(conteudo: String)
+
 }
 
 class Relatorio {
-  - id: 
-  - conteudo: String
-  + gerarResumo()
+
 }
 
 ' Herança
@@ -76,12 +48,12 @@ Usuario <|-- Monitor
 Usuario <|-- Professor
 
 ' Relacionamentos
-Aluno "1" -- "0..*" Agendamento : solicita >
-Monitor "1" -- "0..*" Agendamento : gerencia >
-Agendamento "1" -- "0..1" Presenca : registra >
-Professor "1" -- "0..*" Disciplina : cadastra >
-Disciplina "1" -- "0..*" Monitor : possui >
-Mensagem "1" -- "1" Usuario : remetente >
-Mensagem "1" -- "1" Usuario : destinatario >
-Relatorio "1" -- "1" Professor : pertence >
+Aluno -- Agendamento : solicita >
+Monitor  --  Agendamento : gerencia >
+Agendamento  --  Presenca : registra >
+Professor  --  Disciplina : cadastra >
+Disciplina  --  Monitor : possui >
+Mensagem  --  Usuario : remetente >
+Mensagem -- Usuario : destinatario >
+Relatorio  --  Professor : pertence >
 @enduml

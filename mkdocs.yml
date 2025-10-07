@@ -29,8 +29,6 @@ nav:
   - Transição:
       - Index: Transicao/index.md
 
-
-
 extra_css:
   - css/extra.css
 
@@ -86,15 +84,18 @@ markdown_extensions:
       permalink: true
 
 plugins:
-  - minify:
-      minify_html: true
-  - search
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      puml_keyword: plantuml
+  - search:
 
 theme:
   name: material
   logo: assets/ibmec_logo.png
+  favicon: images/favicon.png
+  language: pt-BR
+  user_color_mode_toggle: true
   palette:
-    
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/toggle-switch
@@ -114,10 +115,6 @@ theme:
         icon: material/toggle-switch-off
         name: Switch to system preference
       color_mode: dark
-      language: pt-BR
-      favicon: images/favicon.png
-      user_color_mode_toggle: true
-  
   features:
     - content.code.copy
     - navigation.indexes
