@@ -148,18 +148,18 @@ actor Monitor
 actor Administrador
 actor Sistema
 
-Aluno --> (Reserva de Horário)
+
 Aluno --> (Consulta de Horários)
 Aluno --> (Histórico de Atendimentos)
 Aluno --> (Cancelamento de Reserva)
 
-Monitor --> (Cadastro de Horários)
 Monitor --> (Histórico de Atendimentos)
 Monitor --> (Cancelamento de Reserva)
 
 Administrador --> (Relatórios)
 Administrador --> (Gerenciamento de Usuários)
 Administrador --> (Gerenciamento de Disciplinas)
+Administrador --> (Cadastro de Horários)
 
 Sistema --> (Autenticação)
 @enduml

@@ -69,8 +69,6 @@ title: Diagrama de Casos de Uso
 
 * Herda de Usuario.
 
-* Pode solicitar agendamento com monitores.
-
 * Visualiza monitorias disponíveis.
 
 * Envia mensagens para monitores.
@@ -78,8 +76,6 @@ title: Diagrama de Casos de Uso
 ### 3. Monitor
 
 * Herda de Usuario.
-
-* Pode aceitar agendamentos solicitados pelos alunos.
 
 * Registra presença do aluno na monitoria.
 
@@ -103,11 +99,11 @@ title: Diagrama de Casos de Uso
 
 * Relaciona-se com vários monitores.
 
-* Permite obter agendamentos para acompanhamento.
+
 
 ### 6. Agendamento
 
-* Marca um encontro entre aluno e monitor.
+* Horario fixo estabelecido pelo Ibmec Casa.
 
 * Atributos: dataHora do atendimento, status (Pendente, Confirmado, Cancelado).
 

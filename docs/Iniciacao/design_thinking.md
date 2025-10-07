@@ -26,7 +26,7 @@ Data: Agosto/2025 a Novembro/2025
 
 - Cadastro de disciplinas, monitores e horários de atendimento. 
 
-- Agendamento online de monitoria por alunos. 
+- Exibição das aulas com horários e dias fixos estabelecidos pelo Casa.
 
 - Relatórios para professores e coordenação. 
 
@@ -41,7 +41,7 @@ Data: Agosto/2025 a Novembro/2025
 - Administradores/Coordenação: que acompanham indicadores gerais. 
 
 **Escopo**: 
- O sistema contempla cadastro de usuários, disciplinas, horários, agendamentos e relatórios básicos.  
+ O sistema contempla cadastro de usuários, disciplinas, horários e relatórios básicos.  
 
  
 
@@ -96,7 +96,7 @@ Pontos de Vista (POV):
 
 - Possibilitar que o monitor defina preço, disponibilidade e metodologia de ensino.
 
-- Disponibilizar um painel intuitivo de busca e agendamento de aulas.
+- Disponibilizar um painel intuitivo de busca de aulas.
 
 
  **Seleção de Ideias**:  Os critérios utilizados para selecionar as melhores ideias foram:
@@ -132,11 +132,9 @@ Pontos de Vista (POV):
 
 - Foto, curso, semestre, matérias, nota ou experiência na disciplina, CRA (opcional).
 
-- Busca e agendamento de aulas
+- Busca de aulas
 
 - Painel com lista de monitores, filtros por matéria e disponibilidade.
-
-- Opção de agendamento direto pela plataforma.
 
 - Avaliação de monitores pelos alunos
 

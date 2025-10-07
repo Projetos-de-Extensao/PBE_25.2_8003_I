@@ -63,7 +63,7 @@ Usuários poderão realizar cadastro e login no sistema, com perfis diferenciado
 ### Agendamento
 
 <p align = "justify">
-Os alunos poderão visualizar horários disponíveis e agendar atendimentos de forma prática e rápida.
+Os alunos poderão visualizar horários disponíveis.
 </p>
 
 ### Monitoria

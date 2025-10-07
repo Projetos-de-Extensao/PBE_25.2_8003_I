@@ -12,17 +12,11 @@ hide:
 
     ---
 
-    Lorem Ipsum     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+    Roberto Ramos, Luis Cesar Caricchio, João Loss
 
     [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.2_8003_I)
 
--   :material-github:{ .lg .middle } __PBE_25.2_8003_II__
 
-    ---
-
-    Lorem Ipsum Lorem Ipsum Lorem Ipsum
-
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.2_8003_II)
 
 
 </div>
