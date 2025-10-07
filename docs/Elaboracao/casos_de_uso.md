@@ -12,11 +12,9 @@ title: Diagrama de Casos de Uso
 ##  Atores
 - **Aluno**
     - Consulta monitorias
-    - Reserva horários
-    - Cancela reservas
 
 - **Monitor**
-    - Cadastra horários
+    
     - Gerencia monitorias
     - Acompanha histórico
 
@@ -24,6 +22,8 @@ title: Diagrama de Casos de Uso
     - Gerencia usuários
     - Gerencia disciplinas
     - Gera relatórios
+    - Reserva horários
+    - Cancela reservas
 
 - **Sistema (Automatizado)**
     - Realiza autenticação
@@ -48,7 +48,6 @@ title: Diagrama de Casos de Uso
 
 ###  Monitorias
 - Consulta de Horários Disponíveis
-- Reserva de Horários
 - Cancelamento de Reserva
 - Histórico de Atendimentos
 
@@ -118,9 +117,8 @@ title: Diagrama de Casos de Uso
 
 **Fluxo Básico:**
 1. Monitor acessa seu painel.
-2. Cadastra horários disponíveis por disciplina.
-3. Sistema valida e persiste os dados.
-4. Sistema exibe relatórios de reservas feitas por alunos.
+2. Sistema valida e persiste os dados.
+3. Sistema exibe relatórios de reservas feitas por alunos.
 
 **Fluxos Alternativos:**
 - Horário inválido → Se o monitor tentar cadastrar um horário fora do intervalo permitido (ex: antes das 08h ou após as 22h), o sistema exibe uma mensagem de erro e bloqueia o cadastro.
