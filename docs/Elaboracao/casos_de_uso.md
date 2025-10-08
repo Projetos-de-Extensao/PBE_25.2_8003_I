@@ -10,25 +10,33 @@ title: Diagrama de Casos de Uso
 #  Diagrama de Casos de Uso – Sistema de Monitoria Acadêmica
 
 ##  Atores
-- **Aluno**
-    - Consulta monitorias
 
-- **Monitor**
-    
-    - Gerencia monitorias
-    - Acompanha histórico
 
-- **Administrador**
-    - Gerencia usuários
-    - Gerencia disciplinas
-    - Gera relatórios
-    - Reserva horários
-    - Cancela reservas
+| Ator    | Ações                 |
+|---------|-----------------------|
+| Aluno | Consulta monitorias   |
 
-- **Sistema (Automatizado)**
-    - Realiza autenticação
-    - Envia notificações
-    - Valida dados
+
+| Ator    | Ações                 |
+|---------|-----------------------|
+| Monitor | Gerencia monitorias   |
+| Monitor | Acompanha histórico   |
+
+
+  | Ator    | Ações                 |
+|---------|-----------------------|
+| Administrador | Gerencia usuários   |
+| Administrador | Gerencia disciplinas  |
+| Administrador | Gera relatórios  |
+| Administrador | Reserva horários  |
+| Administrador | Cancela reservas  |
+
+
+| Ator    | Ações                 |
+|---------|-----------------------|
+| Sistema | Realiza autenticação |
+| Sistema |  Envia notificações   |
+| Sistema |  Valida dados   |
 
 ---
 
@@ -140,8 +148,10 @@ title: Diagrama de Casos de Uso
 - Dados obrigatórios não preenchidos → Ao tentar cadastrar ou editar uma disciplina ou usuário sem preencher campos obrigatórios (ex: nome, e-mail, CPF), o sistema alerta e impede o envio.
 
 ```puml
-@startuml teste
+@startuml
 left to right direction
+skinparam dpi 150
+
 
 actor Aluno
 actor Monitor
@@ -149,18 +159,22 @@ actor Administrador
 actor Sistema
 
 
-Aluno --> (Consulta de Horários)
-Aluno --> (Histórico de Atendimentos)
-Aluno --> (Cancelamento de Reserva)
+Aluno --> (Consulta monitorias)
 
-Monitor --> (Histórico de Atendimentos)
-Monitor --> (Cancelamento de Reserva)
 
-Administrador --> (Relatórios)
-Administrador --> (Gerenciamento de Usuários)
-Administrador --> (Gerenciamento de Disciplinas)
-Administrador --> (Cadastro de Horários)
+Monitor --> (Gerencia monitorias)
+Monitor --> (Acompanha histórico)
 
-Sistema --> (Autenticação)
+
+Administrador --> (Gerencia usuários)
+Administrador --> (Gerencia disciplinas)
+Administrador --> (Gera relatórios)
+Administrador --> (Reserva horários)
+Administrador --> (Cancela reservas)
+
+
+Sistema --> (Realiza autenticação)
+Sistema --> (Envia notificações)
+Sistema --> (Valida dados)
 @enduml
 ```
