@@ -107,10 +107,10 @@ title: Diagrama de Casos de Uso
 
 ---
 
-### Reserva de Monitoria (Aluno)
+### Horário Fixo da Aula de Monitoria (Aluno)
 
 **Fluxo Básico:**
-1. Aluno seleciona a disciplina e o monitor desejado.
+1. Aluno seleciona a disciplina e o monitor pré definido pelo CASA.
 2. Sistema exibe horários disponíveis.
 3. Aluno escolhe horário e confirma a reserva.
 4. Sistema registra a reserva e envia notificação.
