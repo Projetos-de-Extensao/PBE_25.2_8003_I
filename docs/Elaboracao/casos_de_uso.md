@@ -92,6 +92,23 @@ title: Diagrama de Casos de Uso
 - Senha não atende às regras → exibir erro.
 - Link de verificação expirado → solicitar novo cadastro.
 
+
+**Pré-condições:**
+
+-  Usuário não possui conta no sistema.
+
+- Sistema está disponível para receber cadastros.
+
+- Usuário tem acesso a um e-mail válido.
+
+**Pós-condições:**
+
+- Conta criada no sistema com status “pendente de verificação”.
+
+- E-mail de verificação enviado ao usuário.
+
+- Usuário só poderá acessar o sistema após confirmação do e-mail.
+
 ---
 
 ## Login
@@ -104,6 +121,19 @@ title: Diagrama de Casos de Uso
 **Fluxos Alternativos:**
 - Dados inválidos → exibir mensagem de erro.
 - Primeiro acesso → redirecionar para página de edição de perfil.
+
+**Pré-condições:**
+
+- Usuário já possui conta criada e verificada.
+
+- Sistema está operacional.
+
+**Pós-condições:**
+
+- Usuário autenticado e redirecionado à página inicial correspondente ao seu tipo (Aluno/Monitor/Admin).
+
+- Sessão iniciada para o usuário.
+
 
 ---
 
@@ -119,6 +149,21 @@ title: Diagrama de Casos de Uso
 - Horário já reservado → sistema sugere outro horário.
 - Limite de reservas excedido → sistema bloqueia nova reserva.
 
+**Pré-condições:**
+
+- Aluno está logado.
+
+- Disciplinas e monitores já cadastrados pelo CASA.
+
+- Sistema tem horários disponíveis para reserva.
+
+**Pós-condições:**
+
+- Reserva registrada no sistema vinculada ao aluno, disciplina e monitor.
+
+- Notificação enviada ao aluno confirmando a reserva.
+
+
 ---
 
 ###  Gerenciamento de Horários (Monitor)
@@ -131,6 +176,20 @@ title: Diagrama de Casos de Uso
 **Fluxos Alternativos:**
 - Horário inválido → Se o monitor tentar cadastrar um horário fora do intervalo permitido (ex: antes das 08h ou após as 22h), o sistema exibe uma mensagem de erro e bloqueia o cadastro.
 - Sobreposição de horários → Se o horário cadastrado conflitar com outro já registrado (mesmo dia/hora/disciplina), o sistema alerta o monitor e solicita uma correção.
+
+**Pré-condições:**
+
+- Aluno está logado.
+
+- Disciplinas e monitores já cadastrados pelo CASA.
+
+- Sistema tem horários disponíveis para reserva.
+
+**Pós-condições:**
+
+- Reserva registrada no sistema vinculada ao aluno, disciplina e monitor.
+
+- Notificação enviada ao aluno confirmando a reserva.
 
 ---
 
@@ -146,6 +205,18 @@ title: Diagrama de Casos de Uso
 **Fluxos Alternativos:**
 - E-mail de usuário duplicado → Se o admin tentar cadastrar um usuário com um e-mail já existente, o sistema não permite e solicita um e-mail diferente.
 - Dados obrigatórios não preenchidos → Ao tentar cadastrar ou editar uma disciplina ou usuário sem preencher campos obrigatórios (ex: nome, e-mail, CPF), o sistema alerta e impede o envio.
+
+**Pré-condições:**
+
+- Admin está logado.
+
+- Sistema possui permissões administrativas disponíveis.
+
+**Pós-condições:**
+
+- Disciplinas e usuários criados, editados ou excluídos conforme ação.
+
+- Relatórios consolidados gerados com dados atualizados.
 
 ```puml
 @startuml
