@@ -916,9 +916,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#reserva-de-monitoria-aluno" class="md-nav__link">
+  <a href="#horario-fixo-da-aula-de-monitoria-aluno" class="md-nav__link">
     <span class="md-ellipsis">
-      Reserva de Monitoria (Aluno)
+      Horário Fixo da Aula de Monitoria (Aluno)
     </span>
   </a>
   
@@ -1416,6 +1416,30 @@
 - E-mail inválido → exibir erro.
 - Senha não atende às regras → exibir erro.
 - Link de verificação expirado → solicitar novo cadastro.</p>
+<p><strong>Pré-condições:</strong></p>
+<ul>
+<li>
+<p>Usuário não possui conta no sistema.</p>
+</li>
+<li>
+<p>Sistema está disponível para receber cadastros.</p>
+</li>
+<li>
+<p>Usuário tem acesso a um e-mail válido.</p>
+</li>
+</ul>
+<p><strong>Pós-condições:</strong></p>
+<ul>
+<li>
+<p>Conta criada no sistema com status “pendente de verificação”.</p>
+</li>
+<li>
+<p>E-mail de verificação enviado ao usuário.</p>
+</li>
+<li>
+<p>Usuário só poderá acessar o sistema após confirmação do e-mail.</p>
+</li>
+</ul>
 <hr />
 <h2 id="login">Login<a class="headerlink" href="#login" title="Permanent link">&para;</a></h2>
 <p><strong>Fluxo Básico:</strong>
@@ -1425,16 +1449,55 @@
 <p><strong>Fluxos Alternativos:</strong>
 - Dados inválidos → exibir mensagem de erro.
 - Primeiro acesso → redirecionar para página de edição de perfil.</p>
+<p><strong>Pré-condições:</strong></p>
+<ul>
+<li>
+<p>Usuário já possui conta criada e verificada.</p>
+</li>
+<li>
+<p>Sistema está operacional.</p>
+</li>
+</ul>
+<p><strong>Pós-condições:</strong></p>
+<ul>
+<li>
+<p>Usuário autenticado e redirecionado à página inicial correspondente ao seu tipo (Aluno/Monitor/Admin).</p>
+</li>
+<li>
+<p>Sessão iniciada para o usuário.</p>
+</li>
+</ul>
 <hr />
-<h3 id="reserva-de-monitoria-aluno">Reserva de Monitoria (Aluno)<a class="headerlink" href="#reserva-de-monitoria-aluno" title="Permanent link">&para;</a></h3>
+<h3 id="horario-fixo-da-aula-de-monitoria-aluno">Horário Fixo da Aula de Monitoria (Aluno)<a class="headerlink" href="#horario-fixo-da-aula-de-monitoria-aluno" title="Permanent link">&para;</a></h3>
 <p><strong>Fluxo Básico:</strong>
-1. Aluno seleciona a disciplina e o monitor desejado.
+1. Aluno seleciona a disciplina e o monitor pré definido pelo CASA.
 2. Sistema exibe horários disponíveis.
 3. Aluno escolhe horário e confirma a reserva.
 4. Sistema registra a reserva e envia notificação.</p>
 <p><strong>Fluxos Alternativos:</strong>
 - Horário já reservado → sistema sugere outro horário.
 - Limite de reservas excedido → sistema bloqueia nova reserva.</p>
+<p><strong>Pré-condições:</strong></p>
+<ul>
+<li>
+<p>Aluno está logado.</p>
+</li>
+<li>
+<p>Disciplinas e monitores já cadastrados pelo CASA.</p>
+</li>
+<li>
+<p>Sistema tem horários disponíveis para reserva.</p>
+</li>
+</ul>
+<p><strong>Pós-condições:</strong></p>
+<ul>
+<li>
+<p>Reserva registrada no sistema vinculada ao aluno, disciplina e monitor.</p>
+</li>
+<li>
+<p>Notificação enviada ao aluno confirmando a reserva.</p>
+</li>
+</ul>
 <hr />
 <h3 id="gerenciamento-de-horarios-monitor">Gerenciamento de Horários (Monitor)<a class="headerlink" href="#gerenciamento-de-horarios-monitor" title="Permanent link">&para;</a></h3>
 <p><strong>Fluxo Básico:</strong>
@@ -1444,6 +1507,27 @@
 <p><strong>Fluxos Alternativos:</strong>
 - Horário inválido → Se o monitor tentar cadastrar um horário fora do intervalo permitido (ex: antes das 08h ou após as 22h), o sistema exibe uma mensagem de erro e bloqueia o cadastro.
 - Sobreposição de horários → Se o horário cadastrado conflitar com outro já registrado (mesmo dia/hora/disciplina), o sistema alerta o monitor e solicita uma correção.</p>
+<p><strong>Pré-condições:</strong></p>
+<ul>
+<li>
+<p>Aluno está logado.</p>
+</li>
+<li>
+<p>Disciplinas e monitores já cadastrados pelo CASA.</p>
+</li>
+<li>
+<p>Sistema tem horários disponíveis para reserva.</p>
+</li>
+</ul>
+<p><strong>Pós-condições:</strong></p>
+<ul>
+<li>
+<p>Reserva registrada no sistema vinculada ao aluno, disciplina e monitor.</p>
+</li>
+<li>
+<p>Notificação enviada ao aluno confirmando a reserva.</p>
+</li>
+</ul>
 <hr />
 <h3 id="gestao-de-disciplinas-e-usuarios-admin">Gestão de Disciplinas e Usuários (Admin)<a class="headerlink" href="#gestao-de-disciplinas-e-usuarios-admin" title="Permanent link">&para;</a></h3>
 <p><strong>Fluxo Básico:</strong>
@@ -1454,6 +1538,24 @@
 <p><strong>Fluxos Alternativos:</strong>
 - E-mail de usuário duplicado → Se o admin tentar cadastrar um usuário com um e-mail já existente, o sistema não permite e solicita um e-mail diferente.
 - Dados obrigatórios não preenchidos → Ao tentar cadastrar ou editar uma disciplina ou usuário sem preencher campos obrigatórios (ex: nome, e-mail, CPF), o sistema alerta e impede o envio.</p>
+<p><strong>Pré-condições:</strong></p>
+<ul>
+<li>
+<p>Admin está logado.</p>
+</li>
+<li>
+<p>Sistema possui permissões administrativas disponíveis.</p>
+</li>
+</ul>
+<p><strong>Pós-condições:</strong></p>
+<ul>
+<li>
+<p>Disciplinas e usuários criados, editados ou excluídos conforme ação.</p>
+</li>
+<li>
+<p>Relatórios consolidados gerados com dados atualizados.</p>
+</li>
+</ul>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>@startuml
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>left to right direction
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>skinparam dpi 150
