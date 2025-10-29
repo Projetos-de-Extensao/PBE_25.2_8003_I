@@ -1,22 +1,23 @@
-"""
-URL configuration for monitoria project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from rest_framework import routers
+from .views import (
+    UsuarioViewSet, ProfessorViewSet, AlunoViewSet,
+    MonitorViewSet, DisciplinaViewSet, PresencaViewSet,
+    MensagemViewSet, RelatorioViewSet
+)
+
+router = routers.DefaultRouter()
+router.register(r'usuarios', UsuarioViewSet)
+router.register(r'professores', ProfessorViewSet)
+router.register(r'alunos', AlunoViewSet)
+router.register(r'monitores', MonitorViewSet)
+router.register(r'disciplinas', DisciplinaViewSet)
+router.register(r'presencas', PresencaViewSet)
+router.register(r'mensagens', MensagemViewSet)
+router.register(r'relatorios', RelatorioViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
 ]

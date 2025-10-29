@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'vagas',
+    'rest_framework',
 ]
 
 AUTH_USER_MODEL = 'vagas.Usuario'
