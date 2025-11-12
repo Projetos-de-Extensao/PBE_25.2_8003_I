@@ -4,7 +4,7 @@ from rest_framework import routers
 from .views import (
     UsuarioViewSet, ProfessorViewSet, AlunoViewSet,
     MonitorViewSet, DisciplinaViewSet, PresencaViewSet,
-    MensagemViewSet, RelatorioViewSet
+    MensagemViewSet, RelatorioViewSet, ObtainAuthTokenRotate
 )
 
 router = routers.DefaultRouter()
@@ -24,8 +24,7 @@ urlpatterns = [
 ]
 
 
-from rest_framework.authtoken import views as drf_authtoken_views
 urlpatterns += [
-    path('api-token-auth/', drf_authtoken_views.obtain_auth_token, name='api_token_auth'),
+    path('api-token-auth-rotate/', ObtainAuthTokenRotate.as_view(), name='api_token_auth_rotate'),
 ]
 
