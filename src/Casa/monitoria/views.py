@@ -66,13 +66,6 @@ class RelatorioViewSet(viewsets.ModelViewSet):
 
 
 class ObtainAuthTokenRotate(APIView):
-    """
-    Endpoint personalizado de autenticação que valida credenciais e
-    sempre emite um novo token (apaga tokens existentes do usuário).
-
-    Use este endpoint se quiser um token novo a cada login. ATENÇÃO:
-    isso invalidará quaisquer tokens anteriores para o mesmo usuário.
-    """
     permission_classes = [permissions.AllowAny]
 
     def post(self, request, *args, **kwargs):
@@ -85,7 +78,6 @@ class ObtainAuthTokenRotate(APIView):
         if user is None:
             return Response({'detail': 'Credenciais inválidas.'}, status=status.HTTP_400_BAD_REQUEST)
 
-        # Remove os tokens existentes e cria um novo
         Token.objects.filter(user=user).delete()
         token = Token.objects.create(user=user)
         return Response({'token': token.key})

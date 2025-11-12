@@ -15,15 +15,6 @@ class Usuario(AbstractUser):
         return f"{self.username} ({self.get_tipo_display()})"
 
 
-
-class Meta:
-        verbose_name_plural = 'Monitores'
-
-
-class Meta:
-        verbose_name_plural = 'Mensagens'
-
-
 class Disciplina(models.Model):
     nome = models.CharField(max_length=100)
     codigo = models.CharField(max_length=20, unique=True)
@@ -40,14 +31,12 @@ class Professor(models.Model):
         return self.usuario.username
 
 
-
 class Aluno(models.Model):
     usuario = models.OneToOneField(Usuario, on_delete=models.CASCADE)
     matricula = models.CharField(max_length=20, unique=True)
 
     def __str__(self):
         return self.usuario.username
-
 
 class Monitor(models.Model):
     usuario = models.OneToOneField(Usuario, on_delete=models.CASCADE)
@@ -68,7 +57,6 @@ class Presenca(models.Model):
         return f"{self.aluno.usuario.username} - {self.disciplina.nome} ({self.data})"
 
 
-
 class Mensagem(models.Model):
     remetente = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='mensagens_enviadas')
     destinatario = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='mensagens_recebidas')
@@ -77,7 +65,6 @@ class Mensagem(models.Model):
 
     def __str__(self):
         return f"{self.remetente.username} → {self.destinatario.username}"
-
 
 
 class Relatorio(models.Model):
