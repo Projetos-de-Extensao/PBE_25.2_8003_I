@@ -6,6 +6,11 @@ from vagas.serializers import (
     MensagemSerializer, RelatorioSerializer
 )
 from django.shortcuts import render
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status, permissions
+from django.contrib.auth import authenticate
+from rest_framework.authtoken.models import Token
 
 
 def listar_monitorias(request):
@@ -58,3 +63,29 @@ class MensagemViewSet(viewsets.ModelViewSet):
 class RelatorioViewSet(viewsets.ModelViewSet):
     queryset = Relatorio.objects.all()
     serializer_class = RelatorioSerializer
+
+
+class ObtainAuthTokenRotate(APIView):
+    """
+    Endpoint personalizado de autenticação que valida credenciais e
+    sempre emite um novo token (apaga tokens existentes do usuário).
+
+    Use este endpoint se quiser um token novo a cada login. ATENÇÃO:
+    isso invalidará quaisquer tokens anteriores para o mesmo usuário.
+    """
+    permission_classes = [permissions.AllowAny]
+
+    def post(self, request, *args, **kwargs):
+        username = request.data.get('username') or request.data.get('user')
+        password = request.data.get('password')
+        if not username or not password:
+            return Response({'detail': 'Nome de usuário e senha são obrigatórios.'}, status=status.HTTP_400_BAD_REQUEST)
+
+        user = authenticate(username=username, password=password)
+        if user is None:
+            return Response({'detail': 'Credenciais inválidas.'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Remove os tokens existentes e cria um novo
+        Token.objects.filter(user=user).delete()
+        token = Token.objects.create(user=user)
+        return Response({'token': token.key})
