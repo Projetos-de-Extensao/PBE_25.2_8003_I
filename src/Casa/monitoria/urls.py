@@ -23,3 +23,9 @@ urlpatterns = [
     path('', include('vagas.urls')),
 ]
 
+
+from rest_framework.authtoken import views as drf_authtoken_views
+urlpatterns += [
+    path('api-token-auth/', drf_authtoken_views.obtain_auth_token, name='api_token_auth'),
+]
+
