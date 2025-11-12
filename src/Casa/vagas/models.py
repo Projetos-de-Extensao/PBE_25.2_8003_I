@@ -16,6 +16,14 @@ class Usuario(AbstractUser):
 
 
 
+class Meta:
+        verbose_name_plural = 'Monitores'
+
+
+class Meta:
+        verbose_name_plural = 'Mensagens'
+
+
 class Disciplina(models.Model):
     nome = models.CharField(max_length=100)
     codigo = models.CharField(max_length=20, unique=True)
